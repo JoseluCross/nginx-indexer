@@ -72,11 +72,13 @@ a[href$=".rpm"]:before {
 }
 
 a[href$=".tar"]:before,
-a[href$=".tar.gz"]:before {
+a[href$=".xz"]:before,
+a[href$=".txz"]:before {
 	background: url(icons/tar.png);
 }
 
-a[href$=".tgz"]:before {
+a[href$=".tgz"]:before,
+a[href$=".gz"]:before {
 	background: url(icons/tgz.png);
 }
 
@@ -84,7 +86,13 @@ a[href$=".zip"]:before {
 	background: url(icons/zip.png);
 }
 
-a[href$=".bz2"]:before {
+a[href$=".apk"]:before {
+	background: url(icons/android.png);
+}
+
+a[href$=".bz2"]:before,
+a[href$=".bz2"]:before
+a[href$=".tbz2"]:before {
 	background: url(icons/bz2.png);
 }
 
@@ -277,6 +285,7 @@ a[href$=".htm"]:before {
 }
 
 a[href$=".java"]:before,
+a[href$=".jar"]:before,
 a[href$=".class"]:before {
 	background: url(icons/java.png);
 }
